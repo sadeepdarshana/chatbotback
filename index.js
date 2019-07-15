@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 80
+const port = process.env.PORT || 8000
 
 
 
@@ -31,7 +31,7 @@ app.get('/getCurrentWeather', async (req, res) => {
     let place = req.query.place;
     console.log("getCurrentWeather '"+ place + "'");
     let rawWeatherData = await weatherApi.current(place);
-    response.send(prepareCurrentResponse(rawWeatherData));
+    res.send(prepareCurrentResponse(rawWeatherData));
 });
 
 
