@@ -32,7 +32,7 @@ function prepareCurrentResponse(rawWeatherData){
 
 app.post('/*', (req, res) => {
     res.send(req.body);
-    console.log(req.body);
+    console.log(req.body.queryResult);
 })
 
 
