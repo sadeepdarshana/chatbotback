@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apixu": "github:apixu/apixu-nodejs",
     "express": "^4.17.1"
   }
 }
